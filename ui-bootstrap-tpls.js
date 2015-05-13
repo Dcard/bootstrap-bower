@@ -973,7 +973,7 @@ angular.module('ui.bootstrap.position', [])
           case 'top':
             targetElPos = {
               top: hostElPos.top - targetElHeight,
-              left: hostElPos.left,
+              left: hostElPos.left + (hostEl.width() / 3),
             };
             break;
           default:
