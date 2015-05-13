@@ -970,6 +970,12 @@ angular.module('ui.bootstrap.position', [])
               left: shiftWidth[pos1]()
             };
             break;
+          case 'top':
+            targetElPos = {
+              top: hostElPos.top - targetElHeight,
+              left: hostElPos.left,
+            };
+            break;
           default:
             targetElPos = {
               top: hostElPos.top - targetElHeight,
